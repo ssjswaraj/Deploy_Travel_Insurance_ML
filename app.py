@@ -10,27 +10,27 @@ st.title('Travel Insurance Predictor')
 
 col1,col2=st.columns(2)
 with col1:
-    Age=st.number_input('Age',min_value=16,step=1)
+    Age=st.number_input('Age',min_value=16,step=1,value=25)
 with col2:
-    Employment_Type = st.selectbox('Employment Type',['Government Sector','Private Sector/Self Employed'])
+    Employment_Type = st.selectbox('Employment Type',['Government Sector','Private Sector/Self Employed'],index=1)
 
 col3,col4=st.columns(2)
 with col3:
-    GraduateOrNot=st.selectbox('Graduate or Not',option)
+    GraduateOrNot=st.selectbox('Graduate or Not',option,index=0)
 with col4:
-    AnnualIncome=st.number_input('Annual Income',min_value=250000,step=5000)
+    AnnualIncome=st.number_input('Annual Income',min_value=250000,step=5000,value=1500000)
 
 col5,col6=st.columns(2)
 with col5:
-    FamilyMembers=st.number_input('Family Members',min_value=0,step=1)
+    FamilyMembers=st.number_input('Family Members',min_value=0,step=1,value=2)
 with col6:
-    ChronicDiseases=st.selectbox('Chronic Disease',option)
+    ChronicDiseases=st.selectbox('Chronic Disease',option,index=0)
 
 col7 ,col8=st.columns(2)
 with col7:
-    FrequentFlyer=st.selectbox('Frequent Flyer',option)
+    FrequentFlyer=st.selectbox('Frequent Flyer',option,index=0)
 with col8:
-    EverTravelledAbroad = st.selectbox('Ever Travelled Abroad', option)
+    EverTravelledAbroad = st.selectbox('Ever Travelled Abroad', option,index=0)
 
 def pre_processing(pred):
     pred[['Age', 'AnnualIncome', 'FamilyMembers']] = std.transform(pred[['Age', 'AnnualIncome', 'FamilyMembers']])
