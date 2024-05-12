@@ -1,4 +1,4 @@
-# Predictive Modeling for Travel Insurance Purchase | [Link](https://deploytravelinsuranceml.streamlit.app/)
+# Predictive Modeling for Travel Insurance Purchase | [Link](https://deploy-travel-insurance-ml.onrender.com/)
 
 As part of a comprehensive data science project, I developed a predictive model to assess the likelihood of a customer purchasing travel insurance. 
 This project involved leveraging  data obtained through an API, applying data preprocessing techniques, and employing machine learning algorithms to achieve accurate predictions adn then deploying on the Streamlit communit cloud.
